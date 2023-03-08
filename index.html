@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- React  CDN links -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+   <!-- Babel js -->
+   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+   
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head> 
+<body>
+    
+    <header> 
+      <img src="images/menu.png" alt="" id="menu">
+
+      <a href="/index.html"> <img src="images/LogoWhite.png" alt="Logo" id="logo"></a>
+    </header>
+
+    <div class="alert " id="show">
+     
+      <span class="msg"></span>
+
+     
+    </div>
+    
+  <div id="bodyFlex">
+    <aside>
+      <ul id="tasksList">
+        <li style="background-color: #cbf3fe;"> <a href="index.html"><b> إنشاء مهمة جديدة  +</b></a></li>
+        <li> <a href="onProgress.html" >مهام قيد العمل </a></li>
+        <li><a href="Completed.html">المهام المكتملة</a> </li>
+      </ul>
+      <h3>التصنيف</h3>
+      <ul id="tasksCategoryList">
+        <li>المهام الشخصية</li>
+        <li>مهام العمل</li>
+        <li>المهام اليومية</li>
+      </ul>
+    </aside>
+
+    
+    <main>
+        
+       
+
+       <form action=""  method="post"  reset() ; return false >
+        <h3>عنوان المهمة</h3>
+        <br>
+        <input type="text"  title="عنوان المهمة" placeholder="عنوان المهمة"class="inputStyle" id="title" required>
+
+        <h3>تفاصيل المهمة</h3>
+        <br>
+
+        <textarea name="Description" id="" cols="80" rows="9" placeholder=" تفاصيل المهمة"class="inputStyle" id="details" required ></textarea>
+        <br>
+
+        <h3>تصنيف المهمة</h3>
+        <br>
+
+        <select name="" id="category" class="inputStyle" required>
+            <option value="مهمة عمل" selected="selected">مهمة عمل</option>
+            <option value="مهمة يومية">مهمة يومية</option>
+            <option value="  مهمة شخصية">مهمة شخصية</option>
+        </select>
+        
+        
+
+       </form>
+       <a id="createButton">إنشاء</a>
+
+      
+    </main>
+  
+
+  </div>
+
+<!--   
+    <footer>
+ <h4> Made with ❤ by TAHA </h4>
+    </footer> -->
+
+   
+    <script src="index.js" type="text/babel" ></script>
+    <script src="module.js" type="module"></script>
+</body>
+</html>
